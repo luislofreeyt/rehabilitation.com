@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="./img/logos.png" type="image/png">
+  <meta charset="UTF-8">
+  <title>Watch Video - Rehabilitation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* --- Watch Video Section --- */
+    .watch-video-section {
+      padding: 80px 20px;
+      background: linear-gradient(to right, #2a7c64, #1e4d3f);
+      text-align: center;
+      color: #ffffff;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .watch-video-section h2 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    .watch-video-section p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #e0f2ea;
+      animation: slideUp 1s ease-in-out;
+    }
+
+    .video-container {
+      position: relative;
+      width: 90%;
+      max-width: 800px;
+      margin: 0 auto 50px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 2s ease-in;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+    }
+
+    /* --- Back Button --- */
+    .back-button {
+      background-color: #ffffff;
+      color: #2a7c64;
+      padding: 14px 28px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .back-button:hover {
+      background-color: #e8f5f1;
+      transform: scale(1.05);
+    }
+
+    /* --- Animations --- */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      0% { transform: translateY(-30px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      0% { transform: translateY(30px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .video-container iframe {
+        height: 240px;
+      }
+
+      .watch-video-section h2 {
+        font-size: 2rem;
+      }
+    }
+
+
+    .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden; /* Clear floats */
+}
+
+/* Header & Navbar */
+.navbar {
+    background-color: #fff;
+    color: #333;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2a7c64; /* A calming green */
+    text-decoration: none;
+}
+.nav-logo strong {
+    color: #5cb85c; /* Lighter green */
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #555;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #5cb85c;
+}
+
+.hamburger {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #333;
+}
+
+  </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="./index.html" class="nav-logo">Rehab<strong>Well</strong></a>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!-- New Watch Video Section -->
+<section class="watch-video-section" id="watch-video">
+  <h2>Watch Video: Understanding Rehabilitation</h2>
+  <p>
+    Discover what rehabilitation truly means. This video covers the goals, benefits, and impact of rehabilitation on both physical and mental health.
+  </p>
+
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/eE6Rt-bFkvw?si=K6Q0Phf7ovizbCvm" 
+            title="Understanding Rehabilitation" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+    </iframe>
+  </div>
+
+  <a href="./index.html" class="back-button">⬅ Back to Home</a>
+</section>
+    <!-- Footer Section -->
+    <footer style="background: linear-gradient(to right, #1e4d3f, #2a7c64); color: #ffffff; padding: 40px 20px; text-align: center; font-family: 'Segoe UI', sans-serif;">
+    <h3 style="margin-bottom: 10px;">Rehabilitation Center</h3>
+    <p style="margin: 5px 0 20px;">Your well-being, our priority</p>
+
+    <div style="margin-bottom: 20px;">
+        <a href="#" style="margin: 0 10px; text-decoration: none; color: #ffffff; font-size: 24px;">
+        <span title="Facebook">📘</span>
+        </a>
+        <a href="#" style="margin: 0 10px; text-decoration: none; color: #ffffff; font-size: 24px;">
+        <span title="Twitter">🐦</span>
+        </a>
+        <a href="#" style="margin: 0 10px; text-decoration: none; color: #ffffff; font-size: 24px;">
+        <span title="Instagram">📸</span>
+        </a>
+        <a href="#" style="margin: 0 10px; text-decoration: none; color: #ffffff; font-size: 24px;">
+        <span title="YouTube">▶️</span>
+        </a>
+    </div>
+
+    <p style="margin: 0;">Contact us: <a href="mailto:info@rehabilitationcenter.com" style="color: #e0f2ea; text-decoration: underline;">info@rehabilitationcenter.com</a></p>
+    <p style="margin-top: 10px; font-size: 0.9rem; color: #cceee0;">&copy; 2025 Rehabilitation Center. All rights reserved.</p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

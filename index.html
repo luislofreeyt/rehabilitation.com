@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehab Center - Your Path to Recovery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="./img/logos.png" type="image/png">
+</head>
+
+<style>
+    .cta {
+      text-align: center;
+      margin-top: 60px;
+    }
+    .cta a {
+      background-color: #2a7c64;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background-color: #256953;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#hero" class="nav-logo">Rehab<strong>Well</strong></a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#innovative" class="nav-link">innovative</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="eventos.html" class="xd">Events</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <h1>Welcome to RehabWell</h1>
+                <p>Your dedicated partner on the journey to recovery and well-being.</p>
+                <a href="#contact" class="btn btn-primary">Book an Appointment</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>At RehabWell, we are a team of compassionate and experienced professionals committed to providing personalized care. Our mission is to empower individuals to overcome physical and cognitive challenges, helping them achieve their highest potential for independence and quality of life. We believe in a holistic approach, addressing not just the symptoms but the whole person.</p>
+
+            </div>
+        </section>
+
+        <section id="innovative" class="video-section">
+            <div class="container video-flex">
+
+                <!-- LADO IZQUIERDO -->
+                <div class="left-side">
+                <div class="button-group">
+                    <h3>Explore Topics</h3>
+                    <a href="./Watch_Video.html" class="video-button"><span class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/727/727245.png" class="video-icon"></span>Watch Video</a>
+                    <a href="./whais.html" class="video-button"><span class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/1946/1946433.png" class="video-icon"></span>What is Rehabilitation?</a>
+                    <a href="./historia.html" class="video-button"><span class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" class="video-icon"></span>Success Stories</a>
+                    <a href="./tipos.html" class="video-button"><span class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" class="video-icon"></span>Types of Rehabilitation</a>
+                    <a href="./benefic.html" class="video-button"><span class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/1484/1484847.png" class="video-icon"></span>Benefits</a>
+                    <a href="./riegos.html" class="video-button"><span class="icon-circle"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png" class="video-icon"></span>Risks</a>
+                </div>
+                </div>
+
+                <!-- LADO DERECHO -->
+                <div class="right-side">
+                <h2>Learn More About Rehabilitation</h2>
+                <p>Discover the pros and cons of rehabilitation, real-life stories, and how it changes lives for the better.</p>
+
+                <!-- SLIDER -->
+                <div class="slider">
+                    <div class="slides" id="slider-track">
+                    <img src="./img/4.jpg" alt="Slide 1">
+                    <img src="./img/5.jpeg" alt="Slide 2">
+                    <img src="./img/6.jpg" alt="Slide 3">
+                    <img src="./img/7.jpg" alt="Slide 4">
+                    <img src="./img/8.jpg" alt="Slide 5">
+                    </div>
+                </div>
+
+                <!-- DOTS -->
+                <div class="dots" id="dots-container">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                    <span class="dot" onclick="goToSlide(3)"></span>
+                    <span class="dot" onclick="goToSlide(4)"></span>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <img src="./img/fisioterapia.png" alt="Physical Therapy Icon">
+                        <h3>Physical Therapy</h3>
+                        <p>Restoring movement and function through targeted exercises and manual therapy.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="./img/Terapiaocupacional.png" alt="Occupational Therapy Icon">
+                        <h3>Occupational Therapy</h3>
+                        <p>Helping you regain skills for daily living and working activities.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="./img/Terapiadelhabla.png" alt="Speech Therapy Icon">
+                        <h3>Speech Therapy</h3>
+                        <p>Improving communication, swallowing, and cognitive-linguistic skills.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="./img/Bienestarmental.png" alt="Mental Wellness Icon">
+                        <h3>Mental Wellness</h3>
+                        <p>Support for emotional and psychological well-being during recovery.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h2>What Our Patients Say</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-item">
+                        <blockquote>
+                            "The team at RehabWell changed my life. Their dedication and expertise helped me walk again after my accident. I'm forever grateful."
+                        </blockquote>
+                        <cite>- John D.</cite>
+                    </div>
+                    <div class="testimonial-item">
+                        <blockquote>
+                            "I received excellent occupational therapy here. The therapists were patient and really understood my needs. Highly recommended!"
+                        </blockquote>
+                        <cite>- Sarah M.</cite>
+                    </div>
+                     <div class="testimonial-item">
+                        <blockquote>
+                            "After my stroke, speech therapy was crucial. The therapists were incredibly supportive and effective. I've made so much progress."
+                        </blockquote>
+                        <cite>- David P.</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <!-- LEFT SIDE: INFORMATION WITH IMAGE BACKGROUND -->
+                <div class="contact-info">
+                    <div class="overlay">
+                        <h3>Location</h3>
+                        <p>123 Recovery Lane<br>Wellness City, ST 12345</p>
+
+                        <h3>Follow us</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE: FORM -->
+                <div class="contact-form">
+                    <h2>Contact Form</h2>
+                    <form id="contactForm">
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        <input type="email" id="email" name="email" placeholder="Your email address" required>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="cta">
+                <a href="inscribete.html">Sign up</a>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer style="background: linear-gradient(to right, #1e4d3f, #2a7c64); color: #ffffff; padding: 40px 20px; text-align: center; font-family: 'Segoe UI', sans-serif;">
+    <h3 style="margin-bottom: 10px;">Rehabilitation Center</h3>
+    <p style="margin: 5px 0 20px;">Your well-being, our priority</p>
+
+    <div style="margin-bottom: 20px;">
+        <a href="#" style="margin: 0 10px; text-decoration: none; color: #ffffff; font-size: 24px;">
+        <span title="Facebook">📘</span>
+        </a>
+        <a href="#" style="margin: 0 10px; text-decoration: none; color: #ffffff; font-size: 24px;">
+        <span title="Twitter">🐦</span>
+        </a>
+        <a href="#" style="margin: 0 10px; text-decoration: none; color: #ffffff; font-size: 24px;">
+        <span title="Instagram">📸</span>
+        </a>
+        <a href="#" style="margin: 0 10px; text-decoration: none; color: #ffffff; font-size: 24px;">
+        <span title="YouTube">▶️</span>
+        </a>
+    </div>
+
+    <p style="margin: 0;">Contact us: <a href="mailto:info@rehabilitationcenter.com" style="color: #e0f2ea; text-decoration: underline;">info@rehabilitationcenter.com</a></p>
+    <p style="margin-top: 10px; font-size: 0.9rem; color: #cceee0;">&copy; 2025 Rehabilitation Center. All rights reserved.</p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+    <script>
+        const heroSection = document.querySelector('.hero-section');
+
+        const images = [
+            "./img/1.jpg",
+            "./img/2.jpg",
+            "./img/3.jpg"
+        ];
+
+        let index = 0;
+
+        function changeBackground() {
+            heroSection.style.backgroundImage = `url('${images[index]}')`;
+            index = (index + 1) % images.length;
+        }
+
+        // Cambia de imagen cada 5 segundos
+        changeBackground(); // muestra la primera imagen
+        setInterval(changeBackground, 5000);
+    </script>
+    
+
+</body>
+</html>
